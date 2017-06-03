@@ -13,7 +13,7 @@ function createTweet(input) {
     var tweetText = "Quote of the day - " + input.quoteText + " Autor: " + input.quoteAuthor;
 
     if (tweetText.length > 140) {
-    getQuote();
+        getQuote();
     } else {
         var tweet = tweetLink + encodeURIComponent(tweetText);
         $('.quote').text(input.quoteText);
